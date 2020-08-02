@@ -22,13 +22,13 @@ while i == 1:
               i = 2
 
 while i == 2:
-       wage = float(input("what is your hourly rate?\n"))
+       wage = float(input("what is your hourly rate? (in dollars)\n"))
 
        if wage > 0:
+              tha = wage * hours * days
               i = 3
 
-tha = wage * hours * days
-
-print("Your weekly income is ${}" .format(tha))
-print("and after ${} tax" .format(round(tha * 0.8, 2) ))
+if i == 3:
+       print("Your weekly income is ${}" .format(tha))
+       print("and after ${} tax" .format(round(tha * 0.8, 2) ))
        
